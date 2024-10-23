@@ -40,24 +40,28 @@ nav {
   color: rgb(243, 55, 132);
   font-size: 1.4;
   padding: 10px;
-  position: -webkit-sticky;
-  position: sticky;
+
   overflow-y: auto;
   top: 0px;
   z-index: 100;
 }
 
+/* Estilos para la barra lateral fija */
 .fixed-sidebar {
-  
+  background-color: #121867;
+  color: rgb(243, 55, 132);
   border: 2px solid black;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   font-size: 0.8em;
   height: 40%;
+  margin-left: 200px;
   position: fixed;
-  text-align: center;
+  text-align: left;
   top: 30%;
-  width: 80px;
+  width: 100px;
 }
 
 .fixed-sidebar ul {
@@ -66,6 +70,10 @@ nav {
 }
 
 .fixed-sidebar img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   margin: 5%;
   width: 90%;
 }
@@ -85,7 +93,7 @@ header {
 /* Fondo de la cabecera */
 header img {
   opacity: 0.7;
-  width: 100%;
+  width: 70%;
 }
 
 
@@ -96,10 +104,10 @@ aside {
   color: rgb(243, 55, 132);
   padding: 10px;
   position: absolute;
-  right: 15%;
+  left: 30%;
   text-align: center;
   top: 30%;
-  width: 20%;
+  width: 25%;
 }
 
 aside a {
@@ -115,7 +123,7 @@ aside h3 {
   margin: 20px 0px;
 }
 
-/* Elemento principal con las 3 cards */
+/* Elemento principal con las 2 cards */
 main {
   margin: 0px auto;
   width: 80%;
@@ -131,7 +139,7 @@ main:after {
   display: block;
   content: " ";
   height: 2px;
-  width: 30%;
+  width: 85%;
   margin: 0px auto;
   margin-top: 30px;
 }
@@ -140,14 +148,26 @@ main:after {
 .cards {
   overflow-y: auto;
 }
-.cards .card {
+
+.cards .card1 {
   float: left;
   padding: 20px;
   text-align: center;
+  margin-right: 100px;
+  width: 33%;
+}
+.cards .card2 {
+  float: left;
+  padding: 20px;
+  text-align: center;
+  margin-left: 200px;
   width: 33%;
 }
 
-.cards .card img {
+.cards .card1 img {
+  width: 50%;
+}
+.cards .card2 img {
   width: 50%;
 }
 
@@ -155,14 +175,28 @@ main:after {
 /* Sección con la botella y los tres párrafos descriptivos */
 .bottle {
   margin: 30px auto;
-  overflow-y: auto;
   width: 70%;
+  display: flex;             
+  justify-content: space-between; 
+  align-items: center;
 }
 
-.bottle img {
-  float: left;
-  margin-left: 10%;
-  width: 20%;
+.bottle .bottle1 img,
+.bottle .bottle2 img {
+  width: 50%;
+}
+
+.bottle .bottle2 img{
+  margin-left: 200px;
+}
+
+.bottle .text {
+  width: 900px;                 /* El ancho del contenedor de texto */
+  text-align: justify;        /* Justifica el texto */
+}
+
+.bottle div {
+  margin-top: 100px;           /* Margen superior para los contenedores */
 }
 
 .bottle div {
@@ -187,12 +221,12 @@ main:after {
 /* Estilos para la galería de imágenes */
 .gallery {
   clear: both;
-  margin: 20px auto;
+  margin: 30px auto;
   overflow-y: auto;
   width: 70%;
 }
 .gallery img {
-  float: left;
+  float: center;
   width: 20%;
 }
 
@@ -214,18 +248,13 @@ footer address {
   width: 20%;
 }
 
-footer div {
-  float: left;
-  text-align: center;
-  width: 60%;
-}
-
 footer section {
-  float: left;
+  float: right;
   text-align: center;
-  width: 20%;
+  width: 50%;
 }
 
 footer img {
   width: 12%;
+  float: right;
 }
