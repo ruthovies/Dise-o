@@ -47,29 +47,6 @@ nav {
   z-index: 100;
 }
 
-.fixed-sidebar {
-  
-  border: 2px solid black;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  font-size: 0.8em;
-  height: 40%;
-  position: fixed;
-  text-align: center;
-  top: 30%;
-  width: 80px;
-}
-
-.fixed-sidebar ul {
-  list-style: none;
-  padding-left: 5px;
-}
-
-.fixed-sidebar img {
-  margin: 5%;
-  width: 90%;
-}
-
 nav div {
   float: left;
   margin-left: 20px;
@@ -211,7 +188,7 @@ footer {
 
 footer address {
   float: left;
-  display: grid; /* Aplica Grid para organizar en fila */
+  width: 20%;
 }
 
 footer div {

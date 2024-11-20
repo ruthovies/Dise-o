@@ -245,7 +245,7 @@ footer {
 
 footer address {
   float: left;
-  width: 20%;
+  display: grid; /* Aplica Grid para organizar en fila */
 }
 
 footer section {
