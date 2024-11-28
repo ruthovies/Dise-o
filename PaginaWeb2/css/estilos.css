@@ -1,0 +1,52 @@
+header {
+    position: fixed;
+    top: 0px; /* Ajusta la posición vertical */
+    left: 0;
+    width: 2100px; /* Ajusta el tamaño del header */
+    height: 50px;
+    background-color: #C71E17;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #1A1A1A;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+.logo {
+    margin-top: 55px;
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+  
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #8669D4;
+    font-size: 50px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #80BA82; /* Efecto hover */
+}
