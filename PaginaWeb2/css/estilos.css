@@ -1,5 +1,7 @@
-*{
+*, *::before, *::after{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -65,10 +67,47 @@ body {
     color: #3DC193; /* Cambiar color al pasar el cursor */
 }
 
-.cartel{
-    margin-left: 55px;
-    border-radius: 10px;
-    height: 900px;
-    width: 800px;
+.contenedorcartel {
+    display: flex; /* Usamos flexbox para organizar en fila */
+    gap: 10px; /* Espaciado entre los elementos */
+    align-items: flex-start; /* Alineación vertical al inicio */
+    flex-direction: row;
+    padding: 20px; /* Opcional, para dar espacio interno */
+    width: 100%;
 }
 
+.cartelprinc {
+    height: 900px;
+    width: 800px;
+    margin-top: 50px; /* Si necesitas margen adicional arriba */
+    border-radius: 10px;
+    flex-shrink: 0; /* Evita que el cartel reduzca su tamaño */
+    margin-left: 100px;
+}
+
+.informacion {
+    font-size: 20px;
+    line-height: 1.6; /* Tamaño de línea */
+    padding: 200px; /* Espaciado interno */
+    color: #3DC193;
+    flex-grow: 1; /* Hace que la información ocupe el espacio restante */
+    text-align: center;
+}
+
+.contenedorabonos {
+    display: flex; /* Usamos flexbox para organizar en fila */
+    gap: 10px; /* Espaciado entre los elementos */
+    align-items: flex-start; /* Alineación vertical al inicio */
+    padding: 50px; /* Opcional, para dar espacio interno */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedorabonos img {
+    border-radius: 10px;
+    height: 400px;
+    width: 100%;
+    
+}
