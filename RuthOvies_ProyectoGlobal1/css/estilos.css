@@ -1,0 +1,382 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color:  #1A1A1A;
+}
+
+header {
+    width: 100%; /*Ajusta el tamaño del header */
+    height: 50px;
+    background-color: #8669D4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden; /*Evita que el contenido sobresalga */
+}
+
+
+body {
+    width: 100%;
+    background-color:  #1A1A1A;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.logo {
+
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+
+}
+
+.menu{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.menu ul {
+    list-style: none; 
+    display: flex; 
+    margin-left: 1200px;
+    gap: 20px; /*Espaciado entre elementos del menú*/
+}
+
+.menu ul li a {
+
+    text-decoration: none; /*Con esto quitamos el subrayado*/
+    color: #8669D4;
+    font-size: 2rem;
+}
+
+.menu ul li a:hover {
+    color: #3DC193; /*Cambia el color al pasar por encima*/
+}
+
+hr {
+    border: none; /* Elimina el estilo predeterminado */
+    height: 2px;
+    background-color: #8669D4;
+    margin: 20px 0; /*Espaciado superior e inferior*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; /*Centra la línea*/
+}
+
+.contenedorcartel {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 20px; /*Para dar espacio interno*/
+    width: 100%;
+}
+
+.cartelprinc {
+    height: 900px;
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 10px;
+    flex-shrink: 0; /*Evita que el cartel reduzca su tamaño*/
+    margin-left: 100px;
+}
+
+.informacion {
+    font-size: 20px;
+    line-height: 1.6; /*Tamaño de línea*/
+    padding: 200px;
+    color: #3DC193;
+    flex-grow: 1; /*Hace que la información ocupe el espacio restante*/
+    text-align: center;
+}
+
+.contenedorabonos {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /*Los elementos se ajusten si no caben en una fila*/
+    padding: 50px;
+}
+
+.abono {
+    background-color: #FFEBd6; /*Fondo del mismo color de la imagen para que no parezca que esta recortada*/
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px; /* Ancho de los contenedores */
+    text-align: center;
+}
+
+.abono img {
+    border-radius: 10px;
+    height: auto;
+    max-width: 100%; /*Adapta las imágenes al ancho del contenedor*/
+    margin-bottom: 15px;
+}
+
+.abono h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #8669D4;
+}
+
+.abono p {
+    font-size: 1em;
+    color: #000000; /*Texto oscuro ya que en claro no quedba bien*/
+}
+
+.abono button {
+    background-color: #8669D4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer; /*Hace que cuando el cursor pasa por encima se vea el dedito*/
+    margin-top: 15px;
+}
+
+.abono button:hover {
+    background-color: #604a9b;
+}
+
+.contenedor-experiencia {
+    width: 90%;
+    margin: 50px auto; /*Centra el contenedor en la página*/
+    background-color: #FFEBd6;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /*Elementos en columna*/
+    gap: 20px;
+    text-align: center;
+}
+
+.texto-experiencia h2 {
+    font-size: 2em;
+    color: #8669D4;
+    margin-bottom: 10px;
+}
+
+.texto-experiencia p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.video-experiencia iframe {
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    border: none;
+}
+
+.imagenes-experiencia {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.imagenes-experiencia img {
+    width: 30%; /*Cada imagen ocupa el 30% del ancho*/
+    max-width: 200px; /*Limita el tamaño*/
+    border-radius: 10px;
+    object-fit: cover; /*Ajusta las imágenes*/
+}
+
+.footer {
+    background-color: #333;
+    padding: 40px 20px;
+    font-size: 1em;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px; /*Damos un ancho máximo del footer*/
+    margin: 0 auto;
+}
+
+.footer-columna {
+    flex: 1;
+    min-width: 250px; /*Damos un ancho mínimo para las columnas*/
+}
+
+.footer-columna h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #8669D4;
+}
+
+.footer-columna p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #3DC193;
+}
+
+.footer-columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-columna ul li {
+    margin-bottom: 10px;
+}
+
+.footer-columna ul li a {
+    color: #3DC193;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-columna ul li a:hover {
+    color: #3DC193;
+}
+
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-redes a {
+    color: #ffffff;
+    text-decoration: none; /*Quitamos subrayado*/
+    font-size: 1em;
+    background-color: #444;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease; /*Cuando pasamos el cursor, el cuadrito se hace grande*/
+}
+
+.footer-redes a:hover {
+    background-color: #3DC193;
+    color: #333;
+}
+
+
+.footer-creditos {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #ffffff;
+}
+
+@media (max-width: 600px)and(
+min-width: 320px) {
+    header {
+        font-size: 1.2rem; /*Hacemos la letra mas pequeñita*/
+        height: auto; /*Se ajusta automaticamente*/
+        padding: 10px;
+    }
+
+    .menu ul {
+        display:none; /*Ocultamos el menú porque es muy grande*/
+    }
+
+    .contenedorcartel {
+        flex-direction: column; /*Coloca todo el columna*/
+        align-items: center;
+    }
+
+    .cartelprinc {
+        width: 90%; /*Ajustamos el cartel para que no se vea mal*/
+        margin: 20px 0;
+    }
+
+    .informacion {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .contenedorabonos {
+        flex-direction: column; /*Ponemos los abonos en columna*/
+        gap: 20px;
+    }
+
+    .abono {
+        width: 90%;
+    }
+
+    .video-experiencia iframe {
+        width: 100%; /*Ajustamos el video para que no se vea mal*/
+        height: auto;
+    }
+
+    .imagenes-experiencia img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer-contenido {
+        flex-direction: column; /*Ponemos todo en columna y lo centramos*/
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px)and(
+min-width: 600px) {
+    header {
+        font-size: 1.2rem; /*Hacemos la letra mas pequeñita*/
+        height: auto; /*Se ajusta automaticamente*/
+        padding: 10px;
+    }
+
+    .menu ul {
+        display:none; /*Ocultamos el menú porque es muy grande*/
+    }
+
+    .contenedorcartel {
+        flex-direction: column; /*Coloca todo el columna*/
+        align-items: center;
+    }
+
+    .cartelprinc {
+        width: 90%; /*Ajustamos el cartel para que no se vea mal*/
+        margin: 20px 0;
+    }
+
+    .informacion {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .contenedorabonos {
+        display: grid; /* Usamos grid para las columnas */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+        gap: 20px; /* Espacio entre las columnas y filas */
+    }
+
+    .abono {
+        width: 90%;
+    }
+
+    .video-experiencia iframe {
+        width: 100%; /*Ajustamos el video para que no se vea mal*/
+        height: auto;
+    }
+
+    .imagenes-experiencia img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer-contenido {
+        flex-direction: column; /*Ponemos todo en columna y lo centramos*/
+        text-align: center;
+    }
+}
